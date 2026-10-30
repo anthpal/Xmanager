@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "generated_at": "2026-10-30T18:00:00Z",
+  "catalog_app": {
+    "package": "com.anthpal.xtv",
+    "version_code": 101,
+    "version_name": "1.0.1",
+    "min_supported_version_code": 100,
+    "apk_url": "https://github.com/anthpal/Xmanager/releases/latest/download/xtv-1.0.1.apk",
+    "sha256": "",
+    "size_bytes": 0,
+    "changelog": "Demostración del flujo de actualización.\n- Descarga con progreso\n- Verificación SHA-256 (si el plugin nativo está instalado)\n- Instalación confirmada por el usuario",
+    "mandatory": false
+  },
+  "apps": [
+    {
+      "package": "com.anthpal.videopro",
+      "name": "Reproductor de Video Pro",
+      "version_code": 310,
+      "version_name": "3.1.0",
+      "icon": "/icons/video.svg",
+      "apk_url": "https://github.com/anthpal/Xmanager/releases/latest/download/video-pro-3.1.0.apk",
+      "sha256": "",
+      "size_bytes": 24120320,
+      "category": "Video",
+      "order": 10,
+      "featured": true
+    },
+    {
+      "package": "com.anthpal.iptv",
+      "name": "Sistema IPTV Cliente",
+      "version_code": 152,
+      "version_name": "1.5.2",
+      "icon": "/icons/iptv.svg",
+      "apk_url": "https://github.com/anthpal/Xmanager/releases/latest/download/iptv-1.5.2.apk",
+      "sha256": "",
+      "size_bytes": 18743296,
+      "category": "TV en vivo",
+      "order": 20
+    },
+    {
+      "package": "com.anthpal.music",
+      "name": "Música para TV",
+      "version_code": 200,
+      "version_name": "2.0.0",
+      "icon": "/icons/music.svg",
+      "apk_url": "https://github.com/anthpal/Xmanager/releases/latest/download/music-2.0.0.apk",
+      "sha256": "",
+      "size_bytes": 15204352,
+      "category": "Música",
+      "order": 30
+    },
+    {
+      "package": "com.anthpal.live",
+      "name": "Canales en Vivo",
+      "version_code": 120,
+      "version_name": "1.2.0",
+      "icon": "/icons/live.svg",
+      "apk_url": "https://github.com/anthpal/Xmanager/releases/latest/download/live-1.2.0.apk",
+      "sha256": "",
+      "size_bytes": 9871360,
+      "category": "TV en vivo",
+      "order": 40
+    }
+  ],
+  "policy": {
+    "rollout_percent": 100,
+    "kill_switch": false
+  }
+}

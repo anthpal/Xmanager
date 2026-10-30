@@ -1,0 +1,32 @@
+# Dependencias
+node_modules/
+
+# Build web
+dist/
+dist-ssr/
+
+# Entorno local
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Android (generado con `npx cap add android`)
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/capacitor-cordova-android-plugins/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+
+# Firmas
+*.jks
+*.keystore
+!debug.keystore
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,33 @@
+<!--
+  Añade esto a android/app/src/main/AndroidManifest.xml, dentro de <manifest>
+  (los <uses-permission>) y dentro de <application> (los <uses-feature> no van ahí:
+  van también dentro de <manifest>, al mismo nivel que <application>).
+-->
+
+<!-- Instalar APK descargados (Android 8+). El usuario debe conceder
+     "Instalar apps desconocidas" a x TV la primera vez. -->
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+<!-- Mantener la pantalla encendida durante la descarga (opcional). -->
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+<!-- Visibilidad de apps instaladas en Android 11+ (para getInstalledVersions). -->
+<queries>
+    <intent>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent>
+</queries>
+
+<!-- Android TV -->
+<uses-feature
+    android:name="android.software.leanback"
+    android:required="false" />
+<uses-feature
+    android:name="android.hardware.touchscreen"
+    android:required="false" />
+
+<!--
+  Opcional: banner del launcher de TV. Añade android:banner="@drawable/tv_banner"
+  al <application> y coloca una imagen 320x180 en res/drawable/tv_banner.png.
+-->
